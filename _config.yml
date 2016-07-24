@@ -63,7 +63,24 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: apollo
+
+marked:
+    gfm: true
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+
+sitemap:
+    path: sitemap.xml
+
+archive_generator:
+    per_page: 0
+    yearly: false
+    monthly: false
+    daily: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
