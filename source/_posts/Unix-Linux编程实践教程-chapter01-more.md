@@ -1,5 +1,5 @@
 ---
-title: Unix/Linux编程实践教程_chapter01_more
+title: Unix-Linux编程实践教程-chapter01-more
 date: 2016-07-23 16:09:39
 tags: Linux C
 ---

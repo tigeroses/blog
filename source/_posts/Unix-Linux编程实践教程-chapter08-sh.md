@@ -1,0 +1,157 @@
+---
+title: Unix-Linux编程实践教程-chapter08-sh
+date: 2016-07-28 23:04:08
+tags: Linux C
+---
+
+##第８章　进程和程序：编写命令解释器sh
+
+Unix通过将可执行代码装入进程并执行它来运行一个程序．进程是
+一个程序所需的内存空间和其他资源的集合
+
+每个运行中的程序在自己的进程中运行．每个进程都有一个唯一的
+进程ID,所有者，大小及其他属性
+
+系统调用fork通过复制进程来建立一个几乎和原来进程完全相同的
+副本进程．这个新建的进程被称为子进程
+
+一个程序通过调用exec函数族在当前进程中执行一个新的程序
+
+一个程序能通过调用wait来等待子进程的结束
+
+调用程序能将一个字符串列表传给新程序的main函数．新的程序能通过
+调用exit来回传一个８位长的值
+
+Unix shell通过调用fork, exec, wait来运行程序
+
+一个程序是存储在文件中的机器指令集合．一般它是由编译器将源代码
+编译成二进制格式的代码．运行一个程序意味着将这个机器指令序列载入
+内存然后让处理器逐条执行这些指令
+
+可以通过命令ps(process status)来学习进程
+
+shell 是如何运行程序的：
+1　用户键入a.out
+2  shell建立一个新的进程来运行程序
+3  shell将程序从磁盘载入
+4  程序在它的进程中运行直到结束
+
+要学会写shell,需要学会：
+1 运行一个程序    
+2 建立一个进程
+3 等待exit()
+
+一个程序运行另一个程序:
+调用execvp
+内核将新程序载入到当前进程，替代当前进程的代码和数据，因此最好
+还是fork一个子进程，然后子进程来调用execvp
+
+如何建立新进程：
+fork
+系统调用fork正是解决shell只能运行一条命令这个问题所需要的
+
+父进程等待子进程结束：
+进程调用wait等待子进程结束　pid = wait(&status);
+wait暂停调用它的进程直到子进程结束　最终子进程会结束任务并调用
+exit(n)
+
+键盘信号发给所有连接的进程
+
+execvp/exit <=> call/return
+这种通过参数和返回值在拥有私有数据的函数间通信的模式是结构化程序
+设计的基础
+
+全局变量和fork/exec
+全局变量会破坏封装原则，但有时候去掉会更糟糕．Unix提供方法来建立
+全局变量，环境是一些传递给进程的字符串型变量集合
+
+execvp不是一个系统调用，而是一个库函数，这个函数通过execve来
+调用内核服务
+
+## code
+
+``` C
+/*
+ * prompting shell version 2
+ * Solves the 'one-shot' problem of version 1
+ * Uses execvp(), but fork()s first so that the
+ * shell waits around to perform another command
+ * New problem: shell catches signals. Run vi, press ^c
+ */
+
+#include <stdio.h>
+#include <signal.h>
+
+#define MAXARGS 20      // cmdline args
+#define ARGLEN  100     // token length
+
+int main()
+{
+    char *arglist[MAXARGS + 1]; // an array of ptrs
+    int numargs;                // index into array
+    char argbuf[ARGLEN];        // read stuff here
+    char * makestring();        // malloc etc
+
+    numargs = 0;
+    while (numargs < MAXARGS)
+    {
+        printf("Arg[%d]?", numargs);
+        if (fgets(argbuf, ARGLEN, stdin) && *argbuf != '\n')
+            arglist[numargs ++] = makestring(argbuf);
+        else
+        {
+            if (numargs > 0)
+            {
+                arglist[numargs] = NULL;    // close list
+                execute(arglist);
+                numargs = 0;
+            }
+        }
+    }
+    return 0;
+}
+
+int execute(char *arglist[])
+/*
+ * use fork and execvp and wait to do it
+ */
+{
+    int pid, exitstatus;
+
+    pid = fork();
+    switch(pid)
+    {
+        case -1:
+            perror("fork failed");
+            exit(1);
+        case 0:
+            execvp(arglist[0], arglist);
+            perror("execvp failed");
+            exit(1);
+        default:
+            while (wait(&exitstatus) != pid)
+                ;
+            printf("child exited with status %d, %d\n",
+                    exitstatus>>8, exitstatus & 0377);
+    }
+}
+
+char * makestring(char *buf)
+/*
+ * trim off newline and create storage for the string
+ */
+{
+    char *cp, *malloc();
+
+    buf[strlen(buf) - 1] = '\0';    // trim newline
+    cp = malloc(strlen(buf) + 1);   // get memory
+    if (cp == NULL)
+    {
+        fprintf(stderr, "no memory\n");
+        exit(1);
+    }
+    strcpy(cp, buf);
+    return cp;
+
+}
+```
