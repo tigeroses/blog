@@ -1,5 +1,5 @@
 ---
-title: Unix-linux编程实践教程-chapter02-who
+title: Unix-Linux编程实践教程-chapter02-who
 date: 2016-07-23 16:26:24
 tags: Linux C
 ---
