@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter01-more
 date: 2016-07-23 16:09:39
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第一章　Unix系统编程概述

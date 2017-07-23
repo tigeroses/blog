@@ -1,7 +1,8 @@
 ---
 title: 技巧与工具04-python控制鼠标自动化点击脚本
 date: 2017-06-24 17:04:28
-tags: python pyautogui
+tags: [python,pyautogui]
+category: [tools]
 ---
 ## python控制鼠标自动化点击脚本
 

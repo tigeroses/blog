@@ -1,7 +1,8 @@
 ---
 title: python-ConfigParser
 date: 2015-06-14 20:33:43
-tags: python
+tags: [python]
+category: [programming]
 ---
 
 几乎所有的应用程序真正运行起来的时候，都会读取一个或多个配置文件。

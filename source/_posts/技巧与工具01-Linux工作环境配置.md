@@ -1,7 +1,8 @@
 ---
 title: '技巧与工具01:Linux工作环境配置'
 date: 2016-10-21 11:19:55
-tags: 配置　Linux
+tags: [配置,Linux]
+category: [tools]
 ---
 
 个人电脑系统是Ubuntu,也因为Linux环境工作效率更高，比较偏爱Linux系统，

@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter03-ls
 date: 2016-07-23 16:31:16
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第三章　目录与文件属性：编写ls

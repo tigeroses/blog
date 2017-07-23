@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter13-udp
 date: 2016-09-02 00:02:37
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第13章　基于数据报(Datagram)的编程：编写许可证服务器

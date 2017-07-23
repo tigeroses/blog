@@ -1,7 +1,8 @@
 ---
 title: windows免密码ssh登录linux
 date: 2015-12-06 20:43:22
-tags: windows linux ssh
+tags: [windows,linux,ssh]
+category: [tools]
 ---
 
 工作需要从windows下免密码登录linux执行任务，主要利用的是ssh-key生成密钥，并添加到账户目录下，以达到目的。

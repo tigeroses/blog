@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter06-signal
 date: 2016-07-23 16:31:47
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第６章　为用户编程：终端控制和信号

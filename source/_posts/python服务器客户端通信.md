@@ -1,7 +1,8 @@
 ---
 title: python服务器客户端通信
 date: 2016-05-03 21:37:21
-tags: python  flask  服务器  客户端  传输文件
+tags: [python,flask]
+category: [programming]
 ---
 
 这里主要使用python的flask框架搭建一个简易服务器端，然后使用httplib库作为客户端与服务端进行通信，传输json数据并统计打包，网络传输，解包的时间。

@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter11-socket
 date: 2016-08-03 00:51:07
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第１１章　连接到近端或远端的进程：服务器与Socket(套接字)

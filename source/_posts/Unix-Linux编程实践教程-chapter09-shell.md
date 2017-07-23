@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter09-shell
 date: 2016-07-31 23:11:11
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第９章　可编程的shell,shell变量和环境：编写自己的shell

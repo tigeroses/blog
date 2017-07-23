@@ -1,8 +1,10 @@
 ---
 title: markdown工具Mou小抄
 date: 2017-07-03 22:45:04
-tags: markdown macbook Mou
+tags: [markdown,macbook,Mou]
+category: [tools]
 ---
+
 1 各级字体大小，使用＃
 # This is H1
 ## This is H2

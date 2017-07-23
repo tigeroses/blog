@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter08-sh
 date: 2016-07-28 23:04:08
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ##第８章　进程和程序：编写命令解释器sh

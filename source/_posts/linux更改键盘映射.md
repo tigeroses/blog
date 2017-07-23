@@ -1,7 +1,8 @@
 ---
 title: linux更改键盘映射
 date: 2016-03-27 22:20:22
-tags: linux
+tags: [linux]
+category: [tools]
 ---
 
 因为习惯使用vim 编辑器，而早期的vi 的键盘设置跟现在的qwert键盘的按键差别较大，所以我一般选择将不常用的Caps_Lock与常用的Esc 互换，在Win下有很多好用的软件可以直接更改，linux下需要用到xmodmap这个软件来实现。

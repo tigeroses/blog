@@ -1,7 +1,8 @@
 ---
 title: python-pil
 date: 2016-03-28 22:00:18
-tags: python pil
+tags: [python,pil]
+category: [programming]
 ---
 
 工作中接触到图像，需要提取图片的像素值，python的pil库可以很方便的处理图片。

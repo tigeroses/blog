@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter15-IPC
 date: 2016-09-07 23:26:58
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第15章　进程间通信(IPC)

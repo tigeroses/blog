@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter02-who
 date: 2016-07-23 16:26:24
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第２章　用户　文件操作与联机帮助：编写who命令

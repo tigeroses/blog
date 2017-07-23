@@ -1,7 +1,8 @@
 ---
 title: bash-map
 date: 2016-04-05 21:49:45
-tags: bash  map
+tags: [bash,map]
+category: [programming]
 ---
 
 这篇主要记录linux下写简单shell脚本调用bwa对fastq文件作mapping

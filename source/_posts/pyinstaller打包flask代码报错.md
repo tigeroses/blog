@@ -1,7 +1,8 @@
 ---
 title: pyinstaller打包flask代码报错
 date: 2016-08-25 20:13:21
-tags: python pyinstaller flask
+tags: [python,pyinstaller,flask]
+category: [debug]
 ---
 
 最近工作需要用到flask的restful架构做服务器，而工作环境又在windows下，因此需要打包成exe

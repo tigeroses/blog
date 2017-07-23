@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter10-io
 date: 2016-08-01 22:44:47
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第１０章　I/O重定向和管道

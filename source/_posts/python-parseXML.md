@@ -1,7 +1,8 @@
 ---
 title: python-parseXML
 date: 2016-03-28 22:40:33
-tags: python xml
+tags: [python,xml]
+category: [programming]
 ---
 
 以前有使用过python 解析xml的内容的两种方法，先贴出来代码，具体的含义之后搞仔细了再补充上来。

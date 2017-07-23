@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter04-pwd
 date: 2016-07-23 16:31:31
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第四章　文件系统：编写pwd

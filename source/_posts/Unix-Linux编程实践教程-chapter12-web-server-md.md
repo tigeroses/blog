@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter12-web-server
 date: 2016-08-30 22:34:12
-tags: Linux C web-server
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第１２章　连接和协议：编写Web服务器

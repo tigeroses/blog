@@ -1,7 +1,8 @@
 ---
 title: 技巧与工具02-MFC字符串相关
 date: 2016-10-24 20:22:47
-tags: MFC CString
+tags: [MFC,CString]
+category: [tools]
 ---
 
 此篇主要总结了Windows下MFC编程字符串相关的一些知识，如CString, CStringList等的使用．

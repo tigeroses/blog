@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter05-stty
 date: 2016-07-23 16:31:41
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第５章　连接控制：学习stty

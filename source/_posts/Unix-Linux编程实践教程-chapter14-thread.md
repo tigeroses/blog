@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter14-thread
 date: 2016-09-06 22:05:56
-tags: Linux C thread
+tags: [Linux,C,Thread]
+category: [programming]
 ---
 
 ## 第14章　线程机制:并发函数的使用

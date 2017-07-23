@@ -1,7 +1,8 @@
 ---
 title: Unix-Linux编程实践教程-chapter07-vediogame
 date: 2016-07-23 16:32:06
-tags: Linux C
+tags: [Linux,C]
+category: [programming]
 ---
 
 ## 第７章　事件驱动编程：编写一个视频游戏

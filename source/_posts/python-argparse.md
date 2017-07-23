@@ -1,7 +1,8 @@
 ---
 title: python-argparse
 date: 2015-06-02 10:59:26
-tags: python
+tags: [python]
+category: [programming]
 ---
 
 在python程序中，第一步就是获取参数，然后程序才能执行。对于简单的程序脚本，可以直接使用sys.argv[] 来获取命令行参数，但是应用到大的软件项目中，我们需要更加规范，更加方便而功能强大工具来处理命令行参数，本文主要介绍python标准库argparse的简单使用，详细方法及示例请参考python标准库
