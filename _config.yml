@@ -4,6 +4,7 @@
 
 # Site
 title: tigerose's site
+
 subtitle: In me the tiger sniffs the rose
 description:
 author: tigerose
@@ -92,6 +93,5 @@ archive_generator:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-#deploy: https://github.com/tigerRose/tigerRose.github.io.git
-    repository: git@github.com:tigeroses/tigerrose.github.io.git
+    repository: git@github.com:tigeroses/tigeroses.github.io.git
     branch: master
