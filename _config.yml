@@ -93,5 +93,5 @@ archive_generator:
 deploy:
     type: git
 #deploy: https://github.com/tigerRose/tigerRose.github.io.git
-    repository: git@github.com:tigerrose/tigerrose.github.io.git
+    repository: git@github.com:tigeroses/tigerrose.github.io.git
     branch: master
