@@ -1,0 +1,3 @@
+[submodule "themes/fexo"]
+	path = themes/fexo
+	url = https://github.com/forsigner/fexo.git
