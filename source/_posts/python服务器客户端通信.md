@@ -150,7 +150,7 @@ Unpack Time: 0:00:00.106405
 
 ## 原理
 
-1 服务端的搭建。服务端用的是flask restful做的简易app， 其中，api.add_resource(data, '/data/') 就是将继承自Resource并实现来get或者post方法的类映射到http://host:port/data/这个网络资源上。
+1 服务端的搭建。服务端用的是flask restful做的简易app， 其中，api.add_resource(data, '/data/') 就是将继承自Resource并实现来get或者post方法的类映射到`http://host:port/data/`这个网络资源上。
   app.run()方法是开启服务，debug参数为True代表是debug模式，好处是输出一些调试信息，并且当你修改http_server代码后它会自动重启服务，但是注意不要在实际项目中使用，会有安全隐患，默认的host地址是127.0.0.1, 端口是5000，可以传参数修改。
 
 2 客户端搭建。 客户端使用httplib的HTTPConnection进行创建连接, request函数发送POST请求，如果是get请求将method改成GET即可。
