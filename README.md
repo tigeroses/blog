@@ -1,15 +1,19 @@
-blog
+介绍
 ====
 
-本人博客，使用hexo管理博客文章，主题来自fexo
+个人博客,使用hexo管理博客文章,主题来自fexo
+
+主要记录工作学习中遇到的问题和知识总结,方便自己查阅;使用的编程语言有C++,Python,CUDA,Shell等,目前主要工作是对原有软件进行加速,C++使用的会比较多.
+
 
 hexo简单使用
 ============
 
-**hexo new xxx** 新建博客，会在 source/_posts/ 下生成xxx.md文件
+**hexo new xxx** 新建博客,会在 source/_posts/ 下生成xxx.md文件
 
-**hexo g** 更新博客内容
+**hexo g** 生成博客
 
-**hexo s** 本地调试，一般修改过后都要本地调试没有问题再上传
+**hexo s** 本地调试,一般修改过后都要本地调试没有问题再部署
 
-**hexo d** 部署到服务器，比如github
+**hexo d** 部署到服务器,比如github
+
